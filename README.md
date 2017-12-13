@@ -15,6 +15,6 @@ Now get the ViPER4Windows sound effects on Windows-10 !!!
 * Install ViPER4Windows first.
 * Download ViPER4Windows-Patcher (from 'Release' tab if from GitHub).
 * Unzip the file
-* Run the 'v4a-patcher.bat' file.
+* Run the 'v4w-patcher.bat' file.
 * Reboot your PC
 * Done.
