@@ -1,20 +1,26 @@
 # ViPER4Windows-Patcher
-Patches for fix ViPER4Windows issues on Windows-10 and newer.
-Now get the ViPER4Windows sound effects on Windows-10 !!!
+A patcher script for fix ViPER4Windows issues on Windows-10.
 
-### Features
+### Screenshot:
+![Alt text](/../screenshots/windowzer_pic1.png?raw=true)
+
+### Features:
 * Fixes incompatibility issues.
 * Fixes registry entry issues.
-* Standalone Batch script, so run easily.
-* No need run as administrator it will auto ask for permission.
+* Handy portable script, run from anywhere.
+* Integrated administrative privileges request.
 
-### Applicable Operating System
+### Applicable OS:
 * Windows-10+
 
-### Installation
-* Install ViPER4Windows first.
-* Download ViPER4Windows-Patcher (from 'Release' tab if from GitHub).
-* Unzip the file
-* Run the 'v4w-patcher.bat' file.
-* Reboot your PC
-* Done.
+### Instructions:
+* Make sure "ViPER4Windows" installed in your PC.
+* Download "v4w-patcher-vx.x-release.zip"
+* Right click on "v4w-patcher-vx.x-release.zip" select 'Extract All'.
+* Inside extracted folder run "v4w-patcher.bat"
+* You can move and run this script from anywhere. 😉
+
+### Change Log:
+* v1.1: Improved Registry fix, admin request and UI.
+------- Added 'Launch Configurator'
+* v1.0: Initial Release.
