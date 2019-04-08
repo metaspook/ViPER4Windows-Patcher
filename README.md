@@ -13,6 +13,9 @@ A patcher script for fix ViPER4Windows issues on Windows-10.
 ### Applicable OS:
 * Windows-10+
 
+### Download:
+#### [Windowzer (Latest)](https://github.com/metaspook/ViPER4Windows-Patcher/releases/download/v1.1/v4w-patcher-v1.1-release.zip)
+
 ### Instructions:
 * Make sure "ViPER4Windows" installed in your PC.
 * Download "v4w-patcher-vx.x-release.zip"
