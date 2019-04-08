@@ -22,5 +22,5 @@ A patcher script for fix ViPER4Windows issues on Windows-10.
 
 ### Change Log:
 * v1.1: Improved Registry fix, admin request and UI.
-------- Added 'Launch Configurator'
+* ----- Added 'Launch Configurator'
 * v1.0: Initial Release.
