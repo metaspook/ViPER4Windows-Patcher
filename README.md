@@ -2,7 +2,7 @@
 A patcher script for fix ViPER4Windows issues on Windows-10.
 
 ### Screenshot:
-![Alt text](/../screenshots/windowzer_pic1.png?raw=true)
+![Alt text](/../screenshots/v4w-patcher_pic1.png?raw=true)
 
 ### Features:
 * Fixes incompatibility issues.
