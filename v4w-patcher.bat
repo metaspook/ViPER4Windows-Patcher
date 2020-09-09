@@ -26,18 +26,19 @@ pushd "%~dp0"
 set APPVAR=1.1
 for /f "tokens=2*" %%X in ('REG QUERY "HKEY_LOCAL_MACHINE\SOFTWARE\ViPER4Windows" /v ConfigPath') do set PAPPDIR=%%Y
 set APPDIR=%PAPPDIR:\DriverComm=%
-mode con: cols=64 lines=24
+mode con: cols=91 lines=24
 
 :CHOICE_MENU
 call:BANNER                       
-echo   ======================= OPTION MENU ======================
-echo                       ^|                          ^|
-echo    1. Registry Patch. ^|  2. Launch Configurator. ^|  0. Exit.
-echo                       ^|                          ^| 
-echo   ==========================================================
+echo   ==================================== OPTION MENU ======================================
+echo                       ^|                          ^|                           ^| 
+echo    1. Registry Patch. ^|  2. Launch Configurator. ^|  3. Restart Audio Service ^|  0. Exit.
+echo                       ^|                          ^|                           ^| 
+echo   =======================================================================================
 echo.
-echo USAGE: If use option 1 or 2 Restart PC after apply.
-echo        Type a number below and press Enter key.
+echo USAGE: Type a number below and press Enter key.
+echo        It's recommended to stop all audio output before restarting the audio service.
+echo        There's no need to restart the PC.
 echo.
 set CMVAR=
 set /p "CMVAR=Enter Option: "
@@ -70,15 +71,22 @@ if "%CMVAR%"=="1" (
 	>nul 2>&1 timeout /t 2
 	goto:CHOICE_MENU
 )
-if "%CMVAR%"=="2" start "" "%APPDIR%\Configurator.exe"
-goto:CHOICE_MENU
+if "%CMVAR%"=="2" (
+	start "" "%APPDIR%\Configurator.exe"
+	goto:CHOICE_MENU
+)
+if "%CMVAR%"=="3" (
+	call:BANNER
+	powershell -command "Restart-Service -DisplayName 'Windows Audio' -Confirm"
+	goto:CHOICE_MENU
+)
 
 :BANNER
-cls                   
-echo                                ______________
-echo                  ViPER4Windows Patcher v%APPVAR%  \__ 
-echo              \\  Written by Metaspook        /  \ 
-echo               \\_____________________        \__/
+cls                                   
+echo                                                ______________
+echo                                  ViPER4Windows Patcher v%APPVAR%  \__ 
+echo                              \\  Written by Metaspook        /  \ 
+echo                               \\_____________________        \__/
 echo.&echo.&echo.&echo.
 goto:eof
 
