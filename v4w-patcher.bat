@@ -77,7 +77,7 @@ if "%CMVAR%"=="2" (
 )
 if "%CMVAR%"=="3" (
 	call:BANNER
-	powershell -command "Restart-Service -DisplayName 'Windows Audio' -Confirm"
+	powershell -command "Restart-Service -Name Audiosrv -Confirm"
 	goto:CHOICE_MENU
 )
 
