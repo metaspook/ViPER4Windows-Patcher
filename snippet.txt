@@ -1,0 +1,16 @@
+:: Registry entries
+:: ----------------
+::[-HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects]
+::[HKEY_CLASSES_ROOT\AudioEngine\AudioProcessingObjects\{DA2FB532-3014-4B93-AD05-21B2C620F9C2}]
+::"FriendlyName"="ViPER4Windows"
+::"Copyright"="Copyright (C) 2013, vipercn.com"
+::"MajorVersion"=dword:00000001
+::"MinorVersion"=dword:00000000
+::"Flags"=dword:0000000d
+::"MinInputConnections"=dword:00000001
+::"MaxInputConnections"=dword:00000001
+::"MinOutputConnections"=dword:00000001
+::"MaxOutputConnections"=dword:00000001
+::"MaxInstances"=dword:ffffffff
+::"NumAPOInterfaces"=dword:00000001
+::"APOInterface0"="{FD7F2B29-24D0-4B5C-B177-592C39F9CA10}"
