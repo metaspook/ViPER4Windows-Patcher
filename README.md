@@ -3,7 +3,6 @@ A patcher script for fix ViPER4Windows issues on Windows-10/11.<br>
 
 ><b>Requires:</b> Windows-10/11 + PowerShell.
 
-
 ### 🕹️ Screenshot
 ![&nbsp;Missing screenshot!](screenshot.png?raw=true)
 
