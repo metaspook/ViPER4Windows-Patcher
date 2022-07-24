@@ -30,3 +30,9 @@ A patcher script for fix ViPER4Windows issues on Windows-10/11.<br>
 * v1.0 - Initial release.
 ```
 </details>
+
+### 🎈 Contributors:
+<details><summary>Click to collapse/fold.</summary><br/>
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=metaspook/ViPER4Windows-Patcher)
+</details>
